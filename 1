@@ -1,77 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    color: white;
-}
-
-.invitation {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url('background.jpg') no-repeat center center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-}
-
-.content {
-    position: relative;
-    z-index: 2;
-}
-
-.names {
-    font-family: 'Great Vibes', cursive;
-    font-size: 80px;
-    line-height: 1;
-}
-
-.invite-text {
-    font-size: 20px;
-    margin-top: 10px;
-    font-weight: 300;
-}
-
-.details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin: 20px 0;
-}
-
-.date, .time {
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 400;
-}
-
-.number {
-    font-size: 50px;
-    font-weight: 700;
-}
-
-.year {
-    font-size: 22px;
-    margin-bottom: 15px;
-}
-
-.location {
-    font-size: 18px;
-    line-height: 1.5;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="invitation">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1 class="names">Ashley <br> and Ryan</h1>
+            <p class="invite-text">Invite you to their wedding</p>
+            <div class="details">
+                <span class="date">Saturday</span>
+                <span class="number">26</span>
+                <span class="time">4:00 PM</span>
+            </div>
+            <p class="year">2023</p>
+            <p class="location">
+                Carmel Fields<br>
+                4860 Carmel Valley Road<br>
+                Carmel-by-the-Sea, California
+            </p>
+        </div>
+    </div>
+</body>
+</html>
